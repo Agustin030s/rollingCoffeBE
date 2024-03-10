@@ -5,6 +5,7 @@ import "dotenv/config"; //permite procesar variables de entorno
 import path from "path";
 import { fileURLToPath } from "url";
 import productosRouter from "./src/routes/productos.routes.js";
+import "./src/database/database.js";
 
 console.log("bienvenidos");
 
@@ -32,4 +33,4 @@ app.use(express.static(path.join(__dirname, "/public")));
 //   console.log("hola mundo");
 //   res.send("desde el backend de rollingCoffee");
 // });
-app.use('/api', productosRouter);
+app.use("/api", productosRouter);
