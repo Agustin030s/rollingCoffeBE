@@ -46,3 +46,15 @@ export const obtenerProducto = async (req, res) => {
     });
   }
 };
+
+export const editarProducto = async (req, res) =>{
+  try {
+    // extraer el id del producto a editar y los datos del produdcto a editar del req.body
+    // buscar si encontramos el producto con el id
+    // enviar un mensaje de error en caso de no encontrar el producto
+    // editar el producto
+    // contestamos al front con un status 200 
+  } catch (error) {
+    console.error(error);
+  }
+}
